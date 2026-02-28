@@ -1,8 +1,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-    --accent:#3DA5D9;
-    --accent2:#C75070;
+    --accent:#E63946;
+    --accent2:#C1121F;
     --black:#000;
     --bg:#050508;
     --surface:#0D0D14;
@@ -208,12 +208,12 @@ body{
     width:44px;height:44px;border-radius:10px;
     display:flex;align-items:center;justify-content:center;
     margin-bottom:18px;color:var(--accent);
-    background:rgba(61,165,217,.08);border:1px solid rgba(61,165,217,.12);
+    background:rgba(230,57,70,.08);border:1px solid rgba(230,57,70,.12);
     transition:all .3s;
 }
 .feature-icon--alt{
     color:var(--accent2);
-    background:rgba(199,80,112,.08);border-color:rgba(199,80,112,.12);
+    background:rgba(193,18,31,.08);border-color:rgba(193,18,31,.12);
 }
 .feature-card:hover .feature-icon{background:var(--accent);color:var(--black);border-color:var(--accent)}
 .feature-card:hover .feature-icon--alt{background:var(--accent2);color:var(--black);border-color:var(--accent2)}
@@ -234,7 +234,7 @@ body{
 .check-list li::before{
     content:'✓';display:flex;align-items:center;justify-content:center;
     width:22px;height:22px;border-radius:6px;font-size:12px;font-weight:700;
-    background:rgba(61,165,217,.1);color:var(--accent);flex-shrink:0;
+    background:rgba(230,57,70,.1);color:var(--accent);flex-shrink:0;
 }
 
 .stat-card{
@@ -303,14 +303,14 @@ body{
     padding:10px;background:var(--bg);border:1px solid var(--border);
     border-radius:8px;cursor:pointer;transition:all .2s;
 }
-.toggle:has(input:checked){border-color:var(--accent);background:rgba(61,165,217,.06)}
+.toggle:has(input:checked){border-color:var(--accent);background:rgba(230,57,70,.06)}
 .toggle input{accent-color:var(--accent);margin:0}
 .toggle span{color:var(--text2);font-size:13px;font-weight:500}
 
 .success{text-align:center;padding:20px 0}
 .success-check{
     width:48px;height:48px;border-radius:50%;
-    background:rgba(61,165,217,.1);color:var(--accent);
+    background:rgba(230,57,70,.1);color:var(--accent);
     display:flex;align-items:center;justify-content:center;
     font-size:22px;font-weight:700;margin:0 auto 16px;
 }

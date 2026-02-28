@@ -15,7 +15,6 @@ This site is hosted via GitHub Pages at [maxbartnitski.github.io/TrackPass_publi
 - Static HTML/CSS/JS
 - Google Fonts (Inter)
 - No build step required
-- Hero image: use full-resolution `hero.png` (do not downsize or recompress)
 
 ---
 

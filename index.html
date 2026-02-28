@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackPass — Get On Track, Simply</title>
+    <meta name="description" content="TrackPass partners with local racetracks to make getting on track simple. Discover events, register in seconds, and sign waivers — all from your phone.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23E63946'/%3E%3Crect x='14' y='14' width='30' height='30' rx='4' fill='%23fff' opacity='.9'/%3E%3Crect x='56' y='14' width='30' height='30' rx='4' fill='%23fff' opacity='.5'/%3E%3Crect x='14' y='56' width='30' height='30' rx='4' fill='%23fff' opacity='.5'/%3E%3Crect x='56' y='56' width='30' height='30' rx='4' fill='%23fff' opacity='.25'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4XFB96XQCR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4XFB96XQCR');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="header-brand">
+                <div class="header-logo">
+                    <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="11" height="11" rx="2" fill="white" opacity="0.95"/>
+                        <rect x="16" y="1" width="11" height="11" rx="2" fill="white" opacity="0.5"/>
+                        <rect x="1" y="16" width="11" height="11" rx="2" fill="white" opacity="0.5"/>
+                        <rect x="16" y="16" width="11" height="11" rx="2" fill="white" opacity="0.25"/>
+                    </svg>
+                </div>
+                <span class="header-name">TRACKPASS</span>
+            </a>
+            <nav class="header-nav">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#about" class="nav-link">About</a>
+                <button onclick="openModal()" class="nav-cta">Get the App</button>
+            </nav>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#features" onclick="closeMobileMenu()">Features</a>
+        <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+        <a href="#about" onclick="closeMobileMenu()">About</a>
+        <button onclick="closeMobileMenu(); openModal();" class="mobile-menu-cta">Get the App</button>
+    </div>
+
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Get On Track.<br><span class="title-accent">Simply.</span></h1>
+            <div class="hero-divider"></div>
+            <p class="hero-description">TrackPass partners with local racetracks to make getting on track simple — from your first time ever to full open lapping. Discover events, register in seconds, and sign waivers digitally.</p>
+            <div class="hero-cta-group">
+                <button onclick="openModal()" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Get TrackPass
+                </button>
+                <a href="#features" class="btn-secondary">See What's Inside</a>
+            </div>
+            <p class="hero-platforms">Coming soon to iOS & Android</p>
+        </div>
+        <div class="hero-scroll-hint">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/><path d="M7 6l5 5 5-5"/></svg>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">FEATURES</div>
+                <h2 class="section-title">Everything You Need<br>to Hit the Track</h2>
+                <p class="section-subtitle">No more calling tracks, emailing waivers, or wondering where to go. TrackPass puts it all in one place.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Discover Tracks</h3>
+                    <p class="feature-description">Browse racetracks near you on an interactive map. See what events are coming up at every partner track.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Browse Events</h3>
+                    <p class="feature-description">Open Lapping, First Timer sessions, club events — filter by type and find the right session for your skill level.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Instant Checkout</h3>
+                    <p class="feature-description">Register and pay in seconds. No account required — guest checkout gets you on track without the friction.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon icon-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Digital Waivers</h3>
+                    <p class="feature-description">Sign waivers right on your phone after checkout. No more printing, scanning, or bringing paperwork to the track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">HOW IT WORKS</div>
+                <h2 class="section-title">On Track in 3 Steps</h2>
+                <p class="section-subtitle">From discovery to track day — it's that simple.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Find Your Event</h3>
+                        <p class="step-description">Open TrackPass and browse the map or calendar. Filter by event type — Open Lapping, First Timer, or Club events — and find what fits your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg viewBox="0 0 2 60" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="0" x2="1" y2="60" stroke="#E63946" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Register & Pay</h3>
+                        <p class="step-description">Enter your info and check out with Stripe — fast, secure, no account needed. You'll get instant confirmation.</p>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <svg viewBox="0 0 2 60" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="0" x2="1" y2="60" stroke="#E63946" stroke-width="2" stroke-dasharray="4 4"/>
+                    </svg>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Sign & Drive</h3>
+                        <p class="step-description">Sign the waiver digitally on your phone and show up ready to drive. No paperwork, no lines — just you and the track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="track-owners-section">
+        <div class="container">
+            <div class="track-owners-content">
+                <div class="track-owners-text">
+                    <div class="section-badge">FOR TRACK OWNERS</div>
+                    <h2 class="section-title" style="text-align:left">Fill Your Grid.<br>Grow Your Track.</h2>
+                    <p class="track-owners-description">TrackPass isn't just for drivers. We help racetracks fill open lapping sessions, reach first-time drivers, and manage rosters and waivers digitally.</p>
+                    <ul class="track-benefits">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Increase event attendance
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Reach new first-time drivers
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Digital waivers & roster management
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Automated payment processing
+                        </li>
+                    </ul>
+                    <a href="mailto:info@gettrackpass.com?subject=TrackPass%20Partnership" class="btn-primary">Partner With Us</a>
+                </div>
+                <div class="track-owners-visual">
+                    <div class="visual-card">
+                        <div class="visual-stat">
+                            <span class="visual-stat-number">3x</span>
+                            <span class="visual-stat-label">More first-timers</span>
+                        </div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-stat">
+                            <span class="visual-stat-number">0</span>
+                            <span class="visual-stat-label">Paper waivers</span>
+                        </div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-stat">
+                            <span class="visual-stat-number">100%</span>
+                            <span class="visual-stat-label">Online payments</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Built by Drivers,<br>for Drivers.</h2>
+                    <p class="about-description">We know what it's like to want to get on track and not know where to start. Which track? Which event? Do I need a roll bar? Where's the waiver?</p>
+                    <p class="about-description">TrackPass removes all the friction. We partner directly with racetracks so you can focus on what matters — driving.</p>
+                    <button onclick="openModal()" class="btn-primary">Get Early Access</button>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2026</span>
+                        <span class="stat-label">Launch Year</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Free</span>
+                        <span class="stat-label">For Drivers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">All</span>
+                        <span class="stat-label">Skill Levels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Hit the Track?</h2>
+            <p class="cta-subtitle">Join the waitlist and be the first to know when TrackPass launches in your area.</p>
+            <button onclick="openModal()" class="btn-primary btn-large">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                Get TrackPass
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1" y="1" width="11" height="11" rx="2" fill="white" opacity="0.95"/>
+                            <rect x="16" y="1" width="11" height="11" rx="2" fill="white" opacity="0.5"/>
+                            <rect x="1" y="16" width="11" height="11" rx="2" fill="white" opacity="0.5"/>
+                            <rect x="16" y="16" width="11" height="11" rx="2" fill="white" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <div class="footer-brand-text">
+                        <span class="footer-name">TRACKPASS</span>
+                        <span class="footer-tagline">Get on track, simply.</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About</a>
+                    <a href="mailto:info@gettrackpass.com" class="footer-email">info@gettrackpass.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 TrackPass. All rights reserved.</p>
+                <p class="footer-owner">A product of Makoba Business LLC</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="signupModal" class="modal" onclick="closeModalOnBackdrop(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close modal">&times;</button>
+            <div class="modal-icon">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="18" height="18" rx="3" fill="#E63946" opacity="0.9"/>
+                    <rect x="28" y="2" width="18" height="18" rx="3" fill="#E63946" opacity="0.5"/>
+                    <rect x="2" y="28" width="18" height="18" rx="3" fill="#E63946" opacity="0.5"/>
+                    <rect x="28" y="28" width="18" height="18" rx="3" fill="#E63946" opacity="0.25"/>
+                </svg>
+            </div>
+            <h2 class="modal-title">Get TrackPass</h2>
+            <p class="modal-subtitle">Be the first to know when TrackPass launches. Sign up for early access.</p>
+
+            <form id="signupForm" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name (Optional)</label>
+                    <input type="text" id="name" name="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label>I am a...</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="role" value="driver" checked>
+                            <span>Driver</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="role" value="track_owner">
+                            <span>Track Owner</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Join the Waitlist</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#E63946" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <h3>You're on the list!</h3>
+                <p>We'll let you know when TrackPass launches.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        function openModal() {
+            document.getElementById('signupModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('signupModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+            setTimeout(() => {
+                document.getElementById('signupForm').reset();
+                document.getElementById('signupForm').style.display = 'block';
+                document.getElementById('successMessage').style.display = 'none';
+            }, 300);
+        }
+
+        function closeModalOnBackdrop(event) {
+            if (event.target.id === 'signupModal') closeModal();
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            form.style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            setTimeout(() => closeModal(), 2500);
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            menu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        function closeMobileMenu() {
+            document.getElementById('mobileMenu').classList.remove('active');
+            document.querySelector('.mobile-menu-toggle').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

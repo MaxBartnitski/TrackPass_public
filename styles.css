@@ -262,7 +262,7 @@ body{
 .footer-links{display:flex;gap:24px}
 .footer-links a{color:var(--text4);text-decoration:none;font-size:12px;transition:color .2s}
 .footer-links a:hover{color:var(--text2)}
-.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;font-size:11px;color:var(--text4)}
+.footer-bottom{padding-top:20px;display:flex;justify-content:space-between;font-size:11px;color:var(--text3)}
 
 /* ============= MODAL ============= */
 .modal{

@@ -35,8 +35,8 @@
                 <span class="header-name">TRACKPASS</span>
             </a>
             <nav class="header-nav">
-                <a href="#features" class="nav-link">Features</a>
                 <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#features" class="nav-link">Features</a>
                 <a href="#about" class="nav-link">About</a>
                 <button onclick="openModal()" class="nav-cta">Get the App</button>
             </nav>
@@ -49,8 +49,8 @@
     </header>
 
     <div id="mobileMenu" class="mobile-menu">
-        <a href="#features" onclick="closeMobileMenu()">Features</a>
         <a href="#how-it-works" onclick="closeMobileMenu()">How It Works</a>
+        <a href="#features" onclick="closeMobileMenu()">Features</a>
         <a href="#about" onclick="closeMobileMenu()">About</a>
         <button onclick="closeMobileMenu(); openModal();" class="mobile-menu-cta">Get the App</button>
     </div>
@@ -76,6 +76,42 @@
         </div>
         <div class="hero-scroll-hint">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/><path d="M7 6l5 5 5-5"/></svg>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">HOW IT WORKS</div>
+                <h2 class="section-title">On Track in 3 Steps</h2>
+                <p class="section-subtitle">From discovery to track day — it's that simple.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Find Your Event</h3>
+                        <p class="step-description">Open TrackPass and browse the map or calendar. Filter by event type — Open Lapping, First Timer, or Club events — and find what fits your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Register & Pay</h3>
+                        <p class="step-description">Enter your info and check out with Stripe — fast, secure, no account needed. You'll get instant confirmation.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Sign & Drive</h3>
+                        <p class="step-description">Sign the waiver digitally on your phone and show up ready to drive. No paperwork, no lines — just you and the track.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -135,54 +171,6 @@
                     </div>
                     <h3 class="feature-title">Digital Waivers</h3>
                     <p class="feature-description">Sign waivers right on your phone after checkout. No more printing, scanning, or bringing paperwork to the track.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="how-it-works" class="how-it-works-section">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">HOW IT WORKS</div>
-                <h2 class="section-title">On Track in 3 Steps</h2>
-                <p class="section-subtitle">From discovery to track day — it's that simple.</p>
-            </div>
-
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Find Your Event</h3>
-                        <p class="step-description">Open TrackPass and browse the map or calendar. Filter by event type — Open Lapping, First Timer, or Club events — and find what fits your schedule.</p>
-                    </div>
-                </div>
-
-                <div class="step-connector">
-                    <svg viewBox="0 0 2 60" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="0" x2="1" y2="60" stroke="#E63946" stroke-width="2" stroke-dasharray="4 4"/>
-                    </svg>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Register & Pay</h3>
-                        <p class="step-description">Enter your info and check out with Stripe — fast, secure, no account needed. You'll get instant confirmation.</p>
-                    </div>
-                </div>
-
-                <div class="step-connector">
-                    <svg viewBox="0 0 2 60" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="0" x2="1" y2="60" stroke="#E63946" stroke-width="2" stroke-dasharray="4 4"/>
-                    </svg>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3 class="step-title">Sign & Drive</h3>
-                        <p class="step-description">Sign the waiver digitally on your phone and show up ready to drive. No paperwork, no lines — just you and the track.</p>
-                    </div>
                 </div>
             </div>
         </div>

@@ -168,12 +168,12 @@ body{
 
 .section-header{text-align:center;margin-bottom:64px}
 .section-label{
-    display:block;font-size:11px;font-weight:700;letter-spacing:.25em;
-    text-transform:uppercase;color:var(--accent);margin-bottom:14px;
+    display:block;font-size:13px;font-weight:700;letter-spacing:.2em;
+    text-transform:uppercase;color:var(--accent);margin-bottom:16px;
 }
 .section-title{
-    font-size:40px;font-weight:800;color:var(--text);
-    line-height:1.15;letter-spacing:-.02em;
+    font-size:48px;font-weight:800;color:var(--text);
+    line-height:1.12;letter-spacing:-.02em;
 }
 
 /* ============= STEPS ============= */
@@ -184,11 +184,11 @@ body{
 }
 .step-card:hover{border-color:var(--accent);transform:translateY(-3px)}
 .step-num{
-    font-size:32px;font-weight:900;color:var(--accent);
-    margin-bottom:16px;font-variant-numeric:tabular-nums;
+    font-size:36px;font-weight:900;color:var(--accent);
+    margin-bottom:18px;font-variant-numeric:tabular-nums;
 }
-.step-card-title{font-size:18px;font-weight:700;color:var(--text);margin-bottom:10px}
-.step-card-text{font-size:14px;color:var(--text3);line-height:1.7}
+.step-card-title{font-size:20px;font-weight:700;color:var(--text);margin-bottom:10px}
+.step-card-text{font-size:15px;color:var(--text3);line-height:1.7}
 
 /* ============= FEATURES ============= */
 .features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
@@ -197,8 +197,8 @@ body{
     border-radius:14px;padding:32px;transition:all .3s;
 }
 .feature-card:hover{border-color:var(--accent);transform:translateY(-3px)}
-.feature-card h3{font-size:18px;font-weight:700;color:var(--text);margin-bottom:8px}
-.feature-card p{font-size:14px;color:var(--text3);line-height:1.7}
+.feature-card h3{font-size:20px;font-weight:700;color:var(--text);margin-bottom:10px}
+.feature-card p{font-size:15px;color:var(--text3);line-height:1.7}
 .feature-icon{
     width:44px;height:44px;border-radius:10px;
     display:flex;align-items:center;justify-content:center;
@@ -244,8 +244,8 @@ body{
 /* ============= CTA ============= */
 .cta-section{padding:120px 0;background:var(--bg);text-align:center}
 .cta-logo{width:100px;height:auto;margin-bottom:28px}
-.cta-title{font-size:40px;font-weight:800;color:var(--text);margin-bottom:14px;letter-spacing:-.02em}
-.cta-sub{font-size:16px;color:var(--text3);max-width:420px;margin:0 auto 36px;line-height:1.7}
+.cta-title{font-size:48px;font-weight:800;color:var(--text);margin-bottom:16px;letter-spacing:-.02em}
+.cta-sub{font-size:17px;color:var(--text3);max-width:440px;margin:0 auto 40px;line-height:1.7}
 
 /* ============= FOOTER ============= */
 .footer{padding:48px 0 32px;background:var(--black);border-top:1px solid var(--border)}
@@ -317,7 +317,7 @@ body{
     .steps{grid-template-columns:1fr}
     .features-grid{grid-template-columns:1fr}
     .split{grid-template-columns:1fr;gap:48px}
-    .section-title{font-size:34px}
+    .section-title{font-size:38px}
     .hero-title{font-size:48px}
     .hero-inner{align-items:center}
     .hero-title,.hero-description,.hero-note{text-align:center}
@@ -341,13 +341,13 @@ body{
     .hero-cta-group{flex-direction:column}
     .btn-primary,.btn-ghost{width:100%;justify-content:center}
     .section{padding:80px 0}
-    .section-title{font-size:28px}
+    .section-title{font-size:32px}
     .footer-top{flex-direction:column;gap:24px;text-align:center}
     .footer-brand{flex-direction:column}
     .footer-links{flex-wrap:wrap;justify-content:center;gap:16px}
     .footer-bottom{flex-direction:column;gap:6px;text-align:center}
     .modal-content{padding:28px 20px}
-    .cta-title{font-size:28px}
+    .cta-title{font-size:32px}
     .cta-section{padding:80px 0}
     .stat-val{font-size:28px;min-width:64px}
 }
